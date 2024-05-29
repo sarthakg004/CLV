@@ -36,7 +36,7 @@ def predict():
 
     prediction_exp = np.exp(prediction)  
 
-    print(np.exp(prediction_exp))
+    print(prediction_exp)
     return render_template('index.html', pred=prediction_exp)
 
 
