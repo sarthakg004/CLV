@@ -13,7 +13,7 @@ scaler = pickle.load(open('.\model\scaler.pkl', 'rb'))
 
 @app.route('/')
 def hello_world():
-    return render_template("index.html")
+    return render_template("index.html", pred="")
 
 
 @app.route('/detect',methods=['POST','GET'])
@@ -29,15 +29,12 @@ def predict():
     final_scaled = np.concatenate((final_num_scaled[0], final_cat[0]))
     final_scaled = np.array(final_scaled).reshape(1,-1)
 
-    print(int_features)
-    print(final_scaled)
-
     prediction=clf.predict(final_scaled)
 
     prediction_exp = np.exp(prediction)  
 
-    print(prediction_exp)
-    return render_template('index.html', pred=prediction_exp)
+    # Render the template with the prediction result
+    return render_template('index.html', pred=f'Predicted Customer Lifetime Value: $ {round(prediction_exp[0])}')
 
 
 
