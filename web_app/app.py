@@ -18,7 +18,7 @@ def hello_world():
 
 @app.route('/detect',methods=['POST','GET'])
 def predict():
-    int_features=[int(x) for x in request.form.values()]
+    int_features=[float(x) for x in request.form.values()]
     final= np.array(int_features).reshape(1, -1) 
 
     final_num = np.array(final[0][0:7]).reshape(1,-1)
@@ -29,9 +29,14 @@ def predict():
     final_scaled = np.concatenate((final_num_scaled[0], final_cat[0]))
     final_scaled = np.array(final_scaled).reshape(1,-1)
 
+    print(int_features)
+    print(final_scaled)
+
     prediction=clf.predict(final_scaled)
 
     prediction_exp = np.exp(prediction)  
+
+    print(prediction_exp)
 
     # Render the template with the prediction result
     return render_template('index.html', pred=f'Predicted Customer Lifetime Value: $ {round(prediction_exp[0])}')
