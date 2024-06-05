@@ -71,8 +71,10 @@ To address customer retention challenges faced by a US auto insurance company X 
 This project is divided into three major parts. They are —
 
 1. **CLV Prediction with ML**: Analyzed the different variables that contribute to the value of a customer and paved the way to modeling a machine learning model that predicts the Customer Lifetime Value for new clients based on their unique characteristics.
+   
    ![WEB APP](https://github.com/sarthakg004/CLV/blob/master/web_app/prediction_page.png)
-2. **User Interface and Dashboard**: Developed and hosted a website where the company can easily find the CLV for an incoming client based on the model. Also, designed a dashboard that gives a glimpse of the current state of insurance clients for a bigger picture.
+   
+3. **User Interface and Dashboard**: Developed and hosted a website where the company can easily find the CLV for an incoming client based on the model. Also, designed a dashboard that gives a glimpse of the current state of insurance clients for a bigger picture.
    
    ![DASHBOARD](https://github.com/sarthakg004/CLV/blob/master/Dashboard/Screenshot%202024-06-01%20001510.png)
 
