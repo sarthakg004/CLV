@@ -74,10 +74,13 @@ This project is divided into three major parts. They are —
    
    ![WEB APP](https://github.com/sarthakg004/CLV/blob/master/web_app/prediction_page.png)
    
-3. **User Interface and Dashboard**: Developed and hosted a website where the company can easily find the CLV for an incoming client based on the model. Also, designed a dashboard that gives a glimpse of the current state of insurance clients for a bigger picture.
+2. **User Interface and Dashboard**: Developed and hosted a website where the company can easily find the CLV for an incoming client based on the model. Also, designed a dashboard that gives a glimpse of the current state of insurance clients for a bigger picture.
    
    ![DASHBOARD](https://github.com/sarthakg004/CLV/blob/master/Dashboard/Screenshot%202024-06-01%20001510.png)
 
-4. **Large Language Model-based Q&A platform**: Implemented a ’Q&A’ interface using Google’s Gemini LLM that converts human questions to SQL queries and retrieves data from the MySQL database.
+3. **Large Language Model-based Q&A platform**: Implemented a ’Q&A’ interface using Google’s Gemini LLM that converts human questions to SQL queries and retrieves data from the MySQL database.
+
+ ![CHATBOT](https://github.com/sarthakg004/CLV/blob/master/LLM_QA/chatbot_app.png)
+
 
 - Data Source: [IBM Watson Marketing Customer Value Data](https://www.kaggle.com/datasets/pankajjsh06/ibm-watson-marketing-customer-value-data)
